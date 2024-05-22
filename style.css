@@ -1,0 +1,34 @@
+.container{
+    display: flex;
+    padding: 15px;
+
+}
+.response{
+    margin-left: 400px;
+    padding: 30px;
+    height: 500px;
+    width: 400px;
+    border:solid 2px black;
+    border-radius: 10px;
+}
+
+.settings{
+display: flex;
+
+}
+.btn{
+    display: flex;
+    flex-direction: column;
+}
+#getStateInstanceBtn{
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+.sendMessage{
+    margin-bottom: 40px;
+}
+
+input[type="text"]:focus {
+    color: #000000;
+    border: 1px solid #000000
+  }

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Send WhatsApp Message</title>
+  </head>
+  <body>
+    <h1>Send WhatsApp Message</h1>
+    <div class="container">
+      <div class="data">
+        <form id="setting">
+          <div class="form-group">
+            <label for="idInstance"></label>
+            <input
+              type="text"
+              id="idInstance"
+              name="idInstance"
+              placeholder="idInstance"
+              required
+            /><br /><br />
+          </div>
+          <div class="form-group">
+            <label for="apiTokenInstance"></label>
+            <input
+              type="text"
+              id="apiTokenInstance"
+              name="apiTokenInstance"
+              placeholder="API Token Instance"
+              required
+            /><br /><br />
+          </div>
+          <div class="form-group btn">
+            <button id="getSettingsBtn" type="button">Get Settings</button>
+            <button id="getStateInstanceBtn" type="button">
+              Get State Instance
+            </button>
+          </div>
+        </form>
+
+        <form id="sendMessageForm">
+          <label for="chatId"></label>
+          <input
+            type="text"
+            id="chatId"
+            name="chatId"
+            placeholder="Phone number"
+            required
+          /><br /><br />
+
+          <label for="message"></label>
+          <input
+            type="text"
+            id="message"
+            name="message"
+            placeholder="Message"
+            required
+          /><br /><br />
+          <button class="sendMessage btn" type="submit">Send Message</button>
+        </form>
+
+        <form id="SendFileByUrl">
+          <label for="chatIdurl"></label>
+          <input
+            placeholder="Phone Number"
+            type="text"
+            id="chatIdurl"
+            name="chatIdurl"
+            required
+          /><br /><br />
+
+          <label for="url"></label>
+          <input
+            type="text"
+            id="url"
+            name="url"
+            placeholder="Url"
+            required
+          /><br /><br />
+          <button class="SendFileByUrl" type="submit">SendFileByUrl</button>
+        </form>
+      </div>
+      <div class="response"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script src="./sendMessage.mjs"></script>
+    <script src="./SendFileByUrl.mjs"></script>
+    <script src="./getsetting.mjs"></script>
+    <script src="./getStateInstance.mjs"></script>
+  </body>
+</html>
